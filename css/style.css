@@ -1,13 +1,11 @@
 /* ============================================================
    Melodia — estilos do projeto
-   Base é o Tailwind (via CDN). Este arquivo guarda só o que não
-   dá pra resolver com classes utilitárias: tokens, fontes,
-   animações e ajustes globais.
+   Base é o Tailwind v4 (via CDN). Os design tokens (cores, fonte)
+   ficam no @theme dentro do <style type="text/tailwindcss"> do
+   index.html — o CDN só lê esse bloco inline, não este arquivo.
+   Este arquivo é CSS puro: só o que não dá pra resolver com
+   classes utilitárias (animações, ajustes globais etc.).
    ============================================================ */
-
-:root {
-    /* TODO: definir a paleta do Melodia */
-}
 
 html {
     scroll-behavior: smooth;

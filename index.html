@@ -5,23 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Tailwind CSS (Play CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Nunito', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-                    },
-                    colors: {
-                        // TODO: paleta do Melodia
-                        // brand: { ... }
-                    },
-                },
-            },
-        }
-    </script>
+    <!-- Tailwind CSS v4 (Play CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Font Awesome - Ícones -->
     <script src="https://kit.fontawesome.com/ee18729cda.js" crossorigin="anonymous"></script>
@@ -32,7 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Estilos do projeto -->
+    <!-- Tema Tailwind v4 (design tokens via @theme) -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+
+            /* TODO: paleta do Melodia */
+            /* --color-brand-500: oklch(...); */
+        }
+    </style>
+
+    <!-- Estilos do projeto (CSS que não vira classe utilitária) -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
