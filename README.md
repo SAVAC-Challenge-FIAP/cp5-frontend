@@ -42,7 +42,8 @@ campanhas de marketing.
 ├── css/
 │   └── style.css         # tokens e estilos que não vêm do Tailwind
 ├── js/
-│   └── main.js           # interações da página
+│   └── main.js           # interações da página (player da lista de músicas)
+├── audio/                # faixas de demonstração (MP3)
 └── img/                  # imagens, ícones e favicon
 ```
 
@@ -50,6 +51,14 @@ campanhas de marketing.
 
 O projeto é estático, sem build. Basta abrir o `index.html` no navegador
 (ou servir a pasta com qualquer servidor estático).
+
+## Créditos dos áudios
+
+As faixas em `audio/` são de Kevin MacLeod ([incompetech.com](https://incompetech.com)),
+licenciadas sob [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/):
+*Monkeys Spinning Monkeys*, *Sneaky Snitch*, *Local Forecast - Elevator*,
+*Pixel Peeker Polka - faster*, *Carefree* e *Fluffing a Duck*. Foram usadas só como
+demonstração no lugar das músicas da lista, que têm direitos autorais.
 
 ## Integrantes
 
