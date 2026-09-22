@@ -44,7 +44,7 @@ HTML5 · CSS3 · Tailwind · Font Awesome · Google Fonts · JS (opcional, para 
 
 ## Status atual do repositório
 
-- ✅ Base configurada: Tailwind v4 (CDN), Font Awesome, Google Fonts (Inter), `css/style.css`, `js/main.js`, favicon.
+- ✅ Base configurada: Tailwind v4 (CDN), Font Awesome, Google Fonts (Nunito), `css/style.css`, `js/main.js`, favicon.
 - ✅ README já cobre objetivo, seções, tecnologias e integrantes.
 - ⬜ `index.html` ainda está vazio (`<!-- conteúdo do CP5 -->`) — nenhuma das 6 seções foi implementada ainda.
 - ✅ Design system (Figma) no `@theme`: cores, escala tipográfica, `.btn-primary`, `.text-gradient`, `.surface-glass`.
