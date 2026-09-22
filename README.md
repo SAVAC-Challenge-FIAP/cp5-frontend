@@ -30,7 +30,7 @@ campanhas de marketing.
 - HTML5 semântico
 - CSS3 (`css/style.css`)
 - [Tailwind CSS](https://tailwindcss.com/) (via CDN)
-- Google Fonts — Nunito
+- Google Fonts — Inter
 - Font Awesome (ícones)
 - JavaScript (menu fixo com transparência e demais interações)
 
