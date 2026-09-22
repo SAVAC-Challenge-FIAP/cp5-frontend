@@ -38,39 +38,13 @@
             --color-grey: #B9B9B9;
             --color-light-grey: #D8D8D8;
             --color-on-primary: #E7F2EF;
-
-            /* Tipografia — tamanhos do Figma, reduzidos no mobile com clamp() */
-            --text-h1: clamp(3rem, 8vw, 6rem);
-            --text-h1--line-height: 1;
-            --text-h1--font-weight: 800;
-            --text-h2: clamp(2.5rem, 6vw, 4.6875rem);
-            --text-h2--line-height: 1.1;
-            --text-h2--font-weight: 800;
-            --text-h3: clamp(2rem, 4vw, 3rem);
-            --text-h3--line-height: 1.1;
-            --text-h3--font-weight: 800;
-            --text-h4: 1.5rem;
-            --text-h4--line-height: 1.1;
-            --text-h4--font-weight: 700;
-            --text-h5: 1.375rem;
-            --text-h5--line-height: 1;
-            --text-h5--font-weight: 500;
-            --text-h6: 1.25rem;
-            --text-h6--line-height: 1;
-            --text-h6--font-weight: 500;
-            --text-p1: 1.375rem;
-            --text-p1--line-height: 1.5;
-            --text-p2: 1.25rem;
-            --text-p2--line-height: 1.5;
-            --text-label: 1.125rem;
-            --text-label--line-height: 1.5;
         }
 
         @layer components {
             /* Botão primário: default / hover / pressed / focus / disabled */
             .btn-primary {
                 @apply inline-flex items-center justify-center rounded-xl bg-primary-red px-12 py-5
-                    text-label font-semibold capitalize text-on-primary transition-colors
+                    text-lg font-semibold capitalize text-on-primary transition-colors
                     hover:bg-vivid-violet active:bg-primary-red-pressed
                     focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tertiary-pink
                     disabled:pointer-events-none disabled:opacity-50;
