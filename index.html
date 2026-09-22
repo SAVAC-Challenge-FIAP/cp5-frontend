@@ -74,7 +74,137 @@
 <body class="font-sans antialiased">
 
     <!-- conteúdo do CP5 -->
-    
+
+    <!-- Artista em destaque -->
+    <section id="artista" class="relative overflow-hidden bg-primary-dark py-20 text-white lg:py-28">
+        <!-- brilho de fundo (rosa à esquerda, azul à direita) -->
+        <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+            <div class="absolute -left-40 top-0 size-[36rem] rounded-full bg-tertiary-pink/40 blur-[120px]"></div>
+            <div class="absolute -right-40 bottom-0 size-[40rem] rounded-full bg-tertiary-blue/70 blur-[120px]"></div>
+        </div>
+
+        <div class="relative mx-auto flex max-w-7xl flex-col items-center gap-10 px-4 lg:flex-row lg:justify-center lg:gap-0">
+            <!-- texto -->
+            <div class="z-20 flex w-full flex-col gap-6 lg:w-[26rem] lg:shrink-0 lg:-mr-24">
+                <p class="text-lg text-pink-grey">Só no Melodia</p>
+                <h2 class="text-gradient pb-2 text-6xl font-extrabold leading-none sm:text-7xl xl:text-8xl">
+                    Shreya Ghoshal
+                </h2>
+                <p class="text-lg text-blue-grey lg:pr-28">
+                    Uma das vozes mais marcantes da música atual, conquistando o público com vocais potentes
+                    e interpretações cheias de emoção.
+                </p>
+            </div>
+
+            <!-- foto da artista -->
+            <div class="z-10 w-full max-w-sm lg:w-[22rem] lg:max-w-none lg:shrink-0 lg:-mr-32">
+                <img src="img/artista/destaque.webp" alt="Shreya Ghoshal dançando"
+                    class="aspect-[713/1135] w-full rounded-3xl object-cover" loading="lazy">
+            </div>
+
+            <!-- lista de músicas (mockada, ainda sem áudio) -->
+            <div class="surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-xl sm:px-10 sm:py-12">
+                <div class="mb-8 flex items-baseline justify-between">
+                    <h3 class="text-2xl font-bold">Últimas músicas</h3>
+                    <a href="#" class="text-lg font-medium text-blue-grey transition-colors hover:text-white">Ver todas</a>
+                </div>
+
+                <ul class="flex flex-col gap-6">
+                    <li class="flex items-center justify-between gap-4">
+                        <div class="flex min-w-0 items-center gap-4 sm:gap-6">
+                            <img src="img/capas/capa-01.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <div class="min-w-0">
+                                <p class="truncate text-lg font-medium">Yimmi Yimmi</p>
+                                <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
+                            </div>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-4 sm:gap-6">
+                            <span class="text-lg text-grey">2:56</span>
+                            <button type="button" class="grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Yimmi Yimmi">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between gap-4">
+                        <div class="flex min-w-0 items-center gap-4 sm:gap-6">
+                            <img src="img/capas/capa-02.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <div class="min-w-0">
+                                <p class="truncate text-lg font-medium">Tere Liye</p>
+                                <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
+                            </div>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-4 sm:gap-6">
+                            <span class="text-lg text-grey">3:49</span>
+                            <button type="button" class="grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Tere Liye">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between gap-4">
+                        <div class="flex min-w-0 items-center gap-4 sm:gap-6">
+                            <img src="img/capas/capa-03.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <div class="min-w-0">
+                                <p class="truncate text-lg font-medium">Zihaal E Miskin</p>
+                                <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
+                            </div>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-4 sm:gap-6">
+                            <span class="text-lg text-grey">4:02</span>
+                            <button type="button" class="grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Zihaal E Miskin">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between gap-4">
+                        <div class="flex min-w-0 items-center gap-4 sm:gap-6">
+                            <img src="img/capas/capa-04.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <div class="min-w-0">
+                                <p class="truncate text-lg font-medium">Ve Kamleya</p>
+                                <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
+                            </div>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-4 sm:gap-6">
+                            <span class="text-lg text-grey">3:54</span>
+                            <button type="button" class="grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Ve Kamleya">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between gap-4">
+                        <div class="flex min-w-0 items-center gap-4 sm:gap-6">
+                            <img src="img/capas/capa-05.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <div class="min-w-0">
+                                <p class="truncate text-lg font-medium">Koi Tumsa Nahi</p>
+                                <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
+                            </div>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-4 sm:gap-6">
+                            <span class="text-lg text-grey">3:56</span>
+                            <button type="button" class="grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Koi Tumsa Nahi">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between gap-4">
+                        <div class="flex min-w-0 items-center gap-4 sm:gap-6">
+                            <img src="img/capas/capa-06.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <div class="min-w-0">
+                                <p class="truncate text-lg font-medium">Aaguner</p>
+                                <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
+                            </div>
+                        </div>
+                        <div class="flex shrink-0 items-center gap-4 sm:gap-6">
+                            <span class="text-lg text-grey">3:33</span>
+                            <button type="button" class="grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Aaguner">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 
     <script src="js/main.js"></script>
 </body>
