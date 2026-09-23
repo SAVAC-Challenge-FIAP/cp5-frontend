@@ -71,7 +71,7 @@
     <title>Melodia | Sua Música, Sua Forma</title>
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased bg-black">
 
     <!-- conteúdo do CP5 -->
 
@@ -211,8 +211,8 @@
     </section>
 
     <!-- Relatos de usuários -->
-     <section id="relatos">
-        <div class="z-20 flex w-full flex-col items-center gap-6 text-center lg:w-[26rem] lg:shrink-0 lg:-mr-24">
+    <section id="relatos">
+        <div class="z-20 flex w-full flex-col items-center gap-6 text-center mt-8">
             <h2 class="mt-4 text-gradient pb-2 text-6xl font-extrabold leading-none sm:text-7xl xl:text-8xl">
                 Relatos de usuários
             </h2>
@@ -222,13 +222,13 @@
             </p>
         </div>
 
-        <div class="m-4 grid grid-cols-2 gap-4 text-grey">
+        <div class="m-4 grid grid-cols-2 gap-4 text-grey md:grid-cols-4">
             <div class="flex flex-col items-center text-center surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
                 <img src="./img/users/user1.png" alt="Usuário 1" class="w-30">
                 <p class="text-white pb-2">José da Silva</p>
                 <p>"A voz dela me arrepia toda vez."</p>
             </div>
-            <div class="flex flex-col items-center text-center surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
+            <div class="flex flex-col items-center text-center surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px]">
                 <img src="./img/users/user2.png" alt="Usuário 1" class="w-30">
                 <p class="text-white pb-2">Antonio Batista</p>
                 <p>"Simplesmente indescritível ao vivo."</p>
@@ -243,6 +243,11 @@
                 <p class="text-white pb-2">Abudi Amar</p>
                 <p>"Nunca vi talento igual."</p>
             </div>
+        </div>
+
+        <div class="flex justify-center m-10">
+            <button class="bg-pink-500 hover:bg-pink-700 active:bg-pink-900 text-white font-bold py-2 px-4 rounded">
+                Ver tudo (193)</button>
         </div>
      </section>
 
