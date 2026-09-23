@@ -14,8 +14,7 @@
     <!-- Google Fonts - Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Tema Tailwind v4 (design tokens via @theme) — design system do Figma -->
     <style type="text/tailwindcss">
@@ -71,19 +70,49 @@
     <title>Melodia | Sua Música, Sua Forma</title>
 </head>
 
-<body class="font-sans antialiased">
+<body class="bg-primary-dark font-sans antialiased text-white">
 
     <!-- conteúdo do CP5 -->
 
+    <!-- Header -->
+    <header class="fixed inset-x-0 top-4 z-50 px-3 pb-0 pt-4 md:px-6 lg:px-8">
+        <nav
+            class="mx-auto flex max-w-[1500px] items-center justify-between rounded-[24px] border border-white/13 bg-white/[0.03] px-7 py-4 backdrop-blur-[30px] shadow-[0_0_0_1px_rgba(255,255,255,0.02)]">
+            <div class="flex items-center gap-1" aria-label="Pulse logo">
+                <img src="./img/Logo.svg" alt="Logo do Melodia" class="">
+            </div>
+
+            <div class="hidden items-center gap-12 text-[18px] text-white/85 md:flex">
+                <a href="#artista" class="font-semibold text-white">Início</a>
+                <a href="#" class="font-normal text-[#d8d8d8] transition-colors hover:text-white">Novidades</a>
+                <a href="#" class="font-normal text-[#d8d8d8] transition-colors hover:text-white">Baixar</a>
+                <a href="#" class="font-normal text-[#d8d8d8] transition-colors hover:text-white">Planos</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="button"
+                    class="rounded-[16px] px-5 py-3 text-[18px] font-normal text-[#d8d8d8] transition-colors hover:text-white">
+                    Entrar
+                </button>
+                <button type="button"
+                    class="rounded-[16px] bg-white/13 px-5 py-3 text-[18px] font-semibold text-white transition-colors hover:bg-white/20">
+                    Cadastre-se
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
     <!-- Artista em destaque -->
-    <section id="artista" class="relative overflow-hidden bg-primary-dark py-20 text-white lg:py-28">
+    <section id="artista" class="relative overflow-hidden bg-primary-dark pt-28 pb-20 text-white lg:pt-36 lg:pb-28">
         <!-- brilho de fundo (rosa à esquerda, azul à direita) -->
         <div aria-hidden="true" class="pointer-events-none absolute inset-0">
             <div class="absolute -left-40 top-0 size-[36rem] rounded-full bg-tertiary-pink/40 blur-[120px]"></div>
             <div class="absolute -right-40 bottom-0 size-[40rem] rounded-full bg-tertiary-blue/70 blur-[120px]"></div>
         </div>
 
-        <div class="relative mx-auto flex max-w-7xl flex-col items-center gap-10 px-4 lg:flex-row lg:justify-center lg:gap-0">
+        <div
+            class="relative mx-auto flex max-w-7xl flex-col items-center gap-10 px-4 lg:flex-row lg:justify-center lg:gap-0">
             <!-- texto -->
             <div class="z-20 flex w-full flex-col gap-6 lg:w-[26rem] lg:shrink-0 lg:-mr-24">
                 <p class="text-lg text-pink-grey">Só no Melodia</p>
@@ -103,16 +132,19 @@
             </div>
 
             <!-- lista de músicas (player em js/main.js) -->
-            <div class="surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
+            <div
+                class="surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
                 <div class="mb-8 flex items-baseline justify-between">
                     <h3 class="text-2xl font-bold">Últimas músicas</h3>
-                    <a href="#" class="text-lg font-medium text-blue-grey transition-colors hover:text-white">Ver todas</a>
+                    <a href="#" class="text-lg font-medium text-blue-grey transition-colors hover:text-white">Ver
+                        todas</a>
                 </div>
 
                 <ul class="flex flex-col gap-6" data-playlist>
                     <li class="flex items-center justify-between gap-4">
                         <div class="flex min-w-0 items-center gap-4 sm:gap-6">
-                            <img src="./img/capas/capa-01.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <img src="./img/capas/capa-01.webp" alt=""
+                                class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
                             <div class="min-w-0">
                                 <p class="song-title truncate text-lg font-medium transition-colors">Yimmi Yimmi</p>
                                 <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
@@ -120,14 +152,17 @@
                         </div>
                         <div class="flex shrink-0 items-center gap-4 sm:gap-6">
                             <span class="text-lg text-grey">2:05</span>
-                            <button type="button" data-src="./audio/faixa-01.mp3" class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Yimmi Yimmi">
+                            <button type="button" data-src="./audio/faixa-01.mp3"
+                                class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110"
+                                aria-label="Tocar Yimmi Yimmi">
                                 <i class="fa-solid fa-play"></i>
                             </button>
                         </div>
                     </li>
                     <li class="flex items-center justify-between gap-4">
                         <div class="flex min-w-0 items-center gap-4 sm:gap-6">
-                            <img src="./img/capas/capa-02.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <img src="./img/capas/capa-02.webp" alt=""
+                                class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
                             <div class="min-w-0">
                                 <p class="song-title truncate text-lg font-medium transition-colors">Tere Liye</p>
                                 <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
@@ -135,14 +170,17 @@
                         </div>
                         <div class="flex shrink-0 items-center gap-4 sm:gap-6">
                             <span class="text-lg text-grey">2:17</span>
-                            <button type="button" data-src="./audio/faixa-02.mp3" class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Tere Liye">
+                            <button type="button" data-src="./audio/faixa-02.mp3"
+                                class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110"
+                                aria-label="Tocar Tere Liye">
                                 <i class="fa-solid fa-play"></i>
                             </button>
                         </div>
                     </li>
                     <li class="flex items-center justify-between gap-4">
                         <div class="flex min-w-0 items-center gap-4 sm:gap-6">
-                            <img src="./img/capas/capa-03.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <img src="./img/capas/capa-03.webp" alt=""
+                                class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
                             <div class="min-w-0">
                                 <p class="song-title truncate text-lg font-medium transition-colors">Zihaal E Miskin</p>
                                 <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
@@ -150,14 +188,17 @@
                         </div>
                         <div class="flex shrink-0 items-center gap-4 sm:gap-6">
                             <span class="text-lg text-grey">3:09</span>
-                            <button type="button" data-src="./audio/faixa-03.mp3" class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Zihaal E Miskin">
+                            <button type="button" data-src="./audio/faixa-03.mp3"
+                                class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110"
+                                aria-label="Tocar Zihaal E Miskin">
                                 <i class="fa-solid fa-play"></i>
                             </button>
                         </div>
                     </li>
                     <li class="flex items-center justify-between gap-4">
                         <div class="flex min-w-0 items-center gap-4 sm:gap-6">
-                            <img src="./img/capas/capa-04.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <img src="./img/capas/capa-04.webp" alt=""
+                                class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
                             <div class="min-w-0">
                                 <p class="song-title truncate text-lg font-medium transition-colors">Ve Kamleya</p>
                                 <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
@@ -165,14 +206,17 @@
                         </div>
                         <div class="flex shrink-0 items-center gap-4 sm:gap-6">
                             <span class="text-lg text-grey">3:22</span>
-                            <button type="button" data-src="./audio/faixa-04.mp3" class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Ve Kamleya">
+                            <button type="button" data-src="./audio/faixa-04.mp3"
+                                class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110"
+                                aria-label="Tocar Ve Kamleya">
                                 <i class="fa-solid fa-play"></i>
                             </button>
                         </div>
                     </li>
                     <li class="flex items-center justify-between gap-4">
                         <div class="flex min-w-0 items-center gap-4 sm:gap-6">
-                            <img src="./img/capas/capa-05.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <img src="./img/capas/capa-05.webp" alt=""
+                                class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
                             <div class="min-w-0">
                                 <p class="song-title truncate text-lg font-medium transition-colors">Koi Tumsa Nahi</p>
                                 <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
@@ -180,14 +224,17 @@
                         </div>
                         <div class="flex shrink-0 items-center gap-4 sm:gap-6">
                             <span class="text-lg text-grey">3:25</span>
-                            <button type="button" data-src="./audio/faixa-05.mp3" class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Koi Tumsa Nahi">
+                            <button type="button" data-src="./audio/faixa-05.mp3"
+                                class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110"
+                                aria-label="Tocar Koi Tumsa Nahi">
                                 <i class="fa-solid fa-play"></i>
                             </button>
                         </div>
                     </li>
                     <li class="flex items-center justify-between gap-4">
                         <div class="flex min-w-0 items-center gap-4 sm:gap-6">
-                            <img src="./img/capas/capa-06.webp" alt="" class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
+                            <img src="./img/capas/capa-06.webp" alt=""
+                                class="size-16 shrink-0 rounded-lg object-cover sm:size-20">
                             <div class="min-w-0">
                                 <p class="song-title truncate text-lg font-medium transition-colors">Aaguner</p>
                                 <a href="#" class="text-blue-grey underline hover:text-white">Shreya Ghoshal</a>
@@ -195,7 +242,9 @@
                         </div>
                         <div class="flex shrink-0 items-center gap-4 sm:gap-6">
                             <span class="text-lg text-grey">1:07</span>
-                            <button type="button" data-src="./audio/faixa-06.mp3" class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110" aria-label="Tocar Aaguner">
+                            <button type="button" data-src="./audio/faixa-06.mp3"
+                                class="play-btn grid size-[34px] place-items-center rounded-full bg-white text-sm text-primary-dark transition hover:scale-110"
+                                aria-label="Tocar Aaguner">
                                 <i class="fa-solid fa-play"></i>
                             </button>
                         </div>
@@ -203,8 +252,10 @@
                 </ul>
 
                 <p class="mt-8 text-sm text-dark-grey">
-                    Áudios de demonstração: Kevin MacLeod (<a href="https://incompetech.com" target="_blank" rel="noopener" class="underline hover:text-white">incompetech.com</a>),
-                    licença <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br" target="_blank" rel="noopener" class="underline hover:text-white">CC BY 4.0</a>.
+                    Áudios de demonstração: Kevin MacLeod (<a href="https://incompetech.com" target="_blank"
+                        rel="noopener" class="underline hover:text-white">incompetech.com</a>),
+                    licença <a href="https://creativecommons.org/licenses/by/4.0/deed.pt-br" target="_blank"
+                        rel="noopener" class="underline hover:text-white">CC BY 4.0</a>.
                 </p>
             </div>
         </div>
