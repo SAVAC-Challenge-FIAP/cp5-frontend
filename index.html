@@ -83,25 +83,23 @@
       <nav
         class="mx-auto max-w-[1500px] rounded-[24px] border border-white/13 bg-white/[0.03] px-4 py-3 backdrop-blur-[30px] shadow-[0_0_0_1px_rgba(255,255,255,0.02)]"
       >
-        <!-- Mobile: show only logo + hamburger -->
+        <!-- Mobile: logo + sidebar -->
         <div class="flex items-center justify-between md:hidden">
-          <div class="flex items-center gap-1" aria-label="Pulse logo">
+          <div class="flex items-center gap-1">
             <img src="./img/svg/Logo.svg" alt="Logo do Melodia" class="h-8" />
           </div>
           <button
             id="mobile-menu-button"
-            aria-controls="mobile-sidebar"
-            aria-expanded="false"
             class="p-2 rounded-md text-white/90"
           >
             <i class="fa-solid fa-bars fa-lg"></i>
+            <!-- tailwind põe ícone de barras -->
           </button>
         </div>
 
-        <!-- Desktop / md+: full nav -->
         <div class="hidden md:flex items-center justify-between">
-          <div class="flex items-center gap-1" aria-label="Pulse logo">
-            <img src="./img/svg/Logo.svg" alt="Logo do Melodia" class="" />
+          <div class="flex items-center gap-1">
+            <img src="./img/svg/Logo.svg" alt="Logo do Melodia"/>
           </div>
 
           <div class="flex items-center gap-12 text-[18px] text-white/85">
@@ -150,10 +148,10 @@
         <img src="./img/svg/Logo.svg" alt="Logo" class="h-8" />
         <button
           id="mobile-close-button"
-          aria-label="Fechar menu"
           class="p-2 text-white/80"
         >
           <i class="fa-solid fa-xmark fa-lg"></i>
+          <!-- tailwind põe ícone de X -->
         </button>
       </div>
 
@@ -165,24 +163,24 @@
       </nav>
     </aside>
 
-    <!-- Hero (implementação adaptada do Figma) -->
+    <!-- Hero -->
     <section
       id="hero"
       class="relative overflow-hidden bg-primary-dark py-16 lg:py-28"
     >
-      <!-- background glows (Figma-like) -->
+      <!-- background radial -->
       <div
         aria-hidden="true"
-        class="pointer-events-none absolute left-[-8rem] top-[-6rem] w-[36rem] h-[36rem] rounded-full bg-tertiary-pink/30 blur-[96px]"
+        class="absolute left-[-8rem] top-[-6rem] w-[36rem] h-[36rem] rounded-full bg-tertiary-pink/30 blur-[96px]"
       ></div>
       <div
         aria-hidden="true"
-        class="pointer-events-none absolute right-[-10rem] bottom-[-8rem] w-[44rem] h-[44rem] rounded-full bg-tertiary-blue/60 blur-[120px]"
+        class="absolute right-[-10rem] bottom-[-8rem] w-[44rem] h-[44rem] rounded-full bg-tertiary-blue/60 blur-[120px]"
       ></div>
 
       <div class="relative mx-auto max-w-7xl px-4 lg:px-8">
         <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
-          <!-- Mobile-first: image shown first -->
+          <!-- Mobile-first -->
           <div
             class="order-first lg:order-last flex justify-center lg:justify-end"
           >
@@ -191,7 +189,6 @@
             >
               <img
                 src="./img/svg/Rectangle 414.svg"
-                alt="Artista em destaque"
                 class="absolute left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] object-contain transform transition-transform duration-700 ease-out scale-[1.12] lg:scale-[1.25] shadow-xl"
               />
             </div>
