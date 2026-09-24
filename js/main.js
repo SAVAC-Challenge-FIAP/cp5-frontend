@@ -39,3 +39,23 @@ function marcarTocando(botao, tocando) {
     botao.innerHTML = `<i class="fa-solid fa-${tocando ? 'pause' : 'play'}"></i>`;
     titulo.classList.toggle('text-tertiary-pink', tocando);
 }
+
+// Mobile sidebar toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileCloseButton = document.getElementById('mobile-close-button');
+const mobileSidebar = document.getElementById('mobile-sidebar');
+
+function openMobileSidebar() {
+    mobileSidebar.classList.remove('-translate-x-full');
+    document.body.style.overflow = 'hidden';
+    if (mobileMenuButton) mobileMenuButton.setAttribute('aria-expanded', 'true');
+}
+
+function closeMobileSidebar() {
+    mobileSidebar.classList.add('-translate-x-full');
+    document.body.style.overflow = '';
+    if (mobileMenuButton) mobileMenuButton.setAttribute('aria-expanded', 'false');
+}
+
+if (mobileMenuButton) mobileMenuButton.addEventListener('click', openMobileSidebar);
+if (mobileCloseButton) mobileCloseButton.addEventListener('click', closeMobileSidebar);
