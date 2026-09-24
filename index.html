@@ -211,34 +211,36 @@
     </section>
 
     <!-- Relatos de usuários -->
-    <section id="relatos">
-        <div class="z-20 flex w-full flex-col items-center gap-6 text-center mt-8">
+<section id="relatos">
+    <div class="mx-auto max-w-7xl px-4">
+
+        <div class="z-20 flex w-full flex-col items-center gap-6 text-center mt-20">
             <h2 class="mt-4 text-gradient pb-2 text-6xl font-extrabold leading-none sm:text-7xl xl:text-8xl">
                 Relatos de usuários
             </h2>
-            <p class="m-4 text-lg text-grey">
+            <p class="m-4 max-w-2xl text-lg text-grey">
                 Confira os relatos de quem já acompanha o trabalho de perto. Experiências reais
                 contadas por quem se emocionou com cada apresentação.
             </p>
         </div>
 
-        <div class="m-4 grid grid-cols-2 gap-4 text-grey md:grid-cols-4">
-            <div class="flex flex-col items-center text-center surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
+        <div class="mt-8 grid grid-cols-2 gap-4 text-grey md:grid-cols-4">
+            <div class="flex flex-col items-center text-center surface-glass rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
                 <img src="./img/users/user1.png" alt="Usuário 1" class="w-30">
                 <p class="text-white pb-2">José da Silva</p>
                 <p>"A voz dela me arrepia toda vez."</p>
             </div>
-            <div class="flex flex-col items-center text-center surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px]">
+            <div class="flex flex-col items-center text-center surface-glass rounded-3xl px-6 py-10 backdrop-blur-[24px]">
                 <img src="./img/users/user2.png" alt="Usuário 1" class="w-30">
                 <p class="text-white pb-2">Antonio Batista</p>
                 <p>"Simplesmente indescritível ao vivo."</p>
             </div>
-            <div class="flex flex-col items-center text-center surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
+            <div class="flex flex-col items-center text-center surface-glass rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
                 <img src="./img/users/user3.png" alt="Usuário 1" class="w-30">
                 <p class="text-white pb-2">Leonardo Pereira</p>
                 <p>"Emoção pura em cada nota."</p>
             </div>
-            <div class="flex flex-col items-center text-center surface-glass z-20 w-full max-w-lg rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
+            <div class="flex flex-col items-center text-center surface-glass rounded-3xl px-6 py-10 backdrop-blur-[24px] sm:px-10 sm:py-12">
                 <img src="./img/users/user4.png" alt="Usuário 1" class="w-30">
                 <p class="text-white pb-2">Abudi Amar</p>
                 <p>"Nunca vi talento igual."</p>
@@ -249,8 +251,36 @@
             <button class="bg-pink-500 hover:bg-pink-700 active:bg-pink-900 text-white font-bold py-2 px-4 rounded">
                 Ver tudo (193)</button>
         </div>
-     </section>
 
+    </div>
+</section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="flex justify-center mt-100 sm:mt-8 px-4">
+        <div
+            class="relative w-full max-w-[57.5rem] rounded-3xl bg-gradient-to-br from-pink-600/50 via-fuchsia-800/50 to-black/50 backdrop-blur-md px-8 py-12 sm:px-12 m-8">
+            <div class="relative z-10 max-w-md pb-10">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    Don't Miss A Beat!
+                </h2>
+                <p class="mt-4 text-sm text-white/70 sm:text-base">
+                    Fique por dentro dos últimos lançamentos musicais e promoções. Receba atualizações
+                    sobre novos lançamentos, ofertas exclusivas e muito mais direto no seu e-mail.
+                </p>
+    
+                <form class="mt-6 flex items-center gap-2 rounded-full bg-white/10 p-1.5 backdrop-blur-sm">
+                    <input type="email" placeholder="Seu e-mail"
+                        class="flex-1 bg-transparent px-4 text-sm text-white placeholder-white/50 outline-none">
+                    <button type="submit">
+                        <img src="./img/nl_btn.png" alt="Enviar" class="h-10 w-10">
+                    </button>
+                </form>
+            </div>
+    
+            <img src="./img/fone.png" alt="Headphone"
+                class="pointer-events-none absolute -right-30 -top-30 hidden w-[35rem] sm:block">
+        </div>
+    </section>
 
     <script src="js/main.js"></script>
 </body>
