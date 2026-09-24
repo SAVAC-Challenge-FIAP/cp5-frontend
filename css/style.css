@@ -13,5 +13,5 @@ html {
 
 #relatos{
     background-image: url("../img/blue_gradient.png") ;
-    height: 100%;
+    height: 100vh;
 }
