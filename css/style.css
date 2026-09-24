@@ -10,3 +10,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+#relatos{
+    background-image: url("../img/blue_gradient.png") ;
+    height: 100%;
+}
